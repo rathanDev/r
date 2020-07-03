@@ -27,3 +27,17 @@ prod(v1)
 
 
 
+# Comparison operations
+
+v1 <- c(1,2,3,4,5)
+v1 < 2
+
+
+v1 == 3
+
+v2 <- c(10,20,30,40,50)
+
+v1
+v2
+
+v1 < v2
