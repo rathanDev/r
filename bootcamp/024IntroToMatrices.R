@@ -55,3 +55,27 @@ mat[mat>15]
 mat
 
 mat[mat > 8]
+
+
+# Matrix operations
+
+colSums(stocks.matrix)
+
+stocks.matrix
+
+rowSums(stocks.matrix)
+
+rowMeans(stocks.matrix)
+
+FB <- c(112, 113, 114, 120, 121)
+tech.stocks <- rbind(stocks.matrix, FB)
+
+tech.stocks
+
+avg <- rowMeans(tech.stocks)
+avg
+
+
+
+
+
