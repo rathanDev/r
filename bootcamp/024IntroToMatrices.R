@@ -75,7 +75,19 @@ tech.stocks
 avg <- rowMeans(tech.stocks)
 avg
 
+# Matrix selection and indexing
 
+v <- c(1:5)
+v
+v[2]
 
+mat <- matrix(1:50, byrow = T, nrow = 5)
+mat
+
+mat[1,]
+
+mat[1,2]
+
+mat[1:3,7:10]
 
 
