@@ -22,4 +22,8 @@ stock.prices[over.23]
 
 max(stock.prices)
 
+maxPrice <- stock.prices == max(stock.prices)
+maxPrice
+
+stock.prices[maxPrice]
 
