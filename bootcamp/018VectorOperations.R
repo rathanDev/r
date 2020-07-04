@@ -86,7 +86,13 @@ v[my.filter]
 
 
 
+# Getting help
 
+help('vector')
+
+??numeric
+
+help.search('vector')
 
 
 
