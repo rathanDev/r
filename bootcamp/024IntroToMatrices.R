@@ -91,3 +91,31 @@ mat[1,2]
 mat[1:3,7:10]
 
 
+# Factor and Categorical matrices
+  # Nominal categorical variable     -     have No Order
+  # Ordinal categorical variable     -     have Order
+
+animal <- c('d','c','d','c','c')
+id <- c(1,2,3,4,5)
+
+factor(animal)
+
+fact.ani <- factor(animal)
+fact.ani
+
+temps <- c('cold', 'medium', 'hot', 'cold', 'hot', 'hot')
+ordinal.category <- temps 
+ordinal.category
+
+ordinal.category <- factor(temps, ordered = T, levels = c('cold','medium','hot'))
+ordinal.category
+
+summary(ordinal.category)
+
+
+
+
+
+
+
+
