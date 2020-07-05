@@ -83,6 +83,7 @@ df[order(-df$temp),]
 # Dealing with missing data
 
 
+
 empty <- data.frame()
 empty
 
