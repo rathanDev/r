@@ -150,10 +150,52 @@ mtcars[c('cyl','mpg')]
 head(mtcars[c('cyl','mpg')])
 
 
+# -----
+
+df2 <- data.frame(col.name.1 = 2000, col.name.2 = 'new', col.name.3 = 'col3Val')
+df2
+
+dfNew <- rbind(df, df2)
+dfNew
 
 
+dfNew$col.name.4 <- 10:20
+dfNew
 
+head(dfNew)
 
+colnames(dfNew)
+
+colnames(dfNew)[1] <- 'NewColName'
+dfNew
+
+head(dfNew, 7)
+
+dfNew[-2,]
+dfNew
+
+head(mtcars)
+mtcars[mtcars$mpg > 30, ]
+
+mtcars[ mtcars$mpg>25 & mtcars$drat>4, ]
+mtcars[ (mtcars$mpg>25) & (mtcars$drat>4), ]
+
+subset(mtcars, mpg>25 & drat>4)
+
+mtcars[,c(1,2,3)]
+head(mtcars[,c(1,2,3)])
+
+mtcars[,c('mpg','cyl','disp')]
+head(mtcars[,c('mpg','cyl','disp')])
+
+df
+is.na(df)
+any(is.na(df))
+
+# Cleaning up data
+
+mtcars$mpg[is.na(df)] <- 0
+mtcars$mpg[is.na(df)] <- mean(mtcars$mpg)
 
 
 
