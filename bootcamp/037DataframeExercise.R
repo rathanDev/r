@@ -1,9 +1,13 @@
+Name <- c('Sam', 'Frank', 'Amy')
 Age <- c(22, 25, 26)
 Weight <- c(150, 165, 120) 
 Sex <- c('M', 'M', 'F')  
 
+
 df <- data.frame(Age, Weight, Sex)
-rownames(df) <- c('Sam', 'Frank', 'Amy')
+rownames(df) <- Name
+
+# df <- (row.names=Name, Age,Weight,Sex)
 
 df
 
@@ -21,6 +25,8 @@ colnames(matDf) <- c('V1', 'V2', 'V3', 'V4', 'V5')
 
 matDf
 
+matAsDf <- as.data.frame(mat)
+matAsDf
 
 df <- mtcars
 
