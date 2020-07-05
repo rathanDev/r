@@ -38,9 +38,7 @@ df <- data.frame(days, temp, rain)
 
 # 34. DataFrames - Selection and Indexing
 
-
 df
-
 df[1,]
 df[,1]
 
@@ -65,6 +63,101 @@ df[sorted.temp,]
 
 df[order(df$temp),]
 df[order(-df$temp),]
+
+
+
+# Overview of DataFrames
+# 
+# Creating DataFrames
+# Importing and exporting data
+# Getting information about dataframe
+# Referencing cells
+#
+# Referencing rows
+# Referencing columns
+# Adding rows
+# Adding columns
+# Setting column names
+# Selecting multiple rows
+# Selecting multiple columns
+# Dealing with missing data
+
+
+empty <- data.frame()
+empty
+
+c1 <- 1:10
+c1
+
+letters
+c2 <- letters[1:10]
+c2
+
+df <- data.frame(col.name.1=c1, col.name.2=c2)
+df
+# dataframe with 10 rows and 2 columns
+
+restult <- write.csv(df, file = 'savedDataFrame.csv')
+restult
+df2 <- read.csv('savedDataFrame.csv')
+df2
+
+
+nrow(df)
+ncol(df)
+colnames(df)
+rownames(df)
+
+str(df)
+summary(df)
+
+df
+df[[5,2]]
+
+df[[5,'col.name.2']]
+df[5,2]
+df[5,'col.name.2']
+df[2:5,'col.name.2']
+
+
+df$col.name.1
+
+df[[2, 'col.name.1']] <- 9999
+df
+
+df$col.name.3 = 1:10
+df
+
+df[1,]
+df[1,2]
+df[1:2,2:3]
+
+df[1:2,]
+
+mtcars
+?mtcars
+
+head(mtcars)
+
+mtcars$cyl
+
+mtcars[1:nrow(mtcars),'cyl']
+mtcars[['cyl']]
+mtcars$cyl
+
+mtcars[c('cyl','mpg')]
+head(mtcars[c('cyl','mpg')])
+
+
+
+
+
+
+
+
+
+
+
 
 
 
