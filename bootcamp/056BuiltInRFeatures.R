@@ -4,6 +4,7 @@
 # rev()     Reverse elements in object
 # str()     Show the structure of an object
 # append()  Merge objects together (works on vectors and lists)
+# is. & as.
 
 seq(0,10, by=2)
 0:10
