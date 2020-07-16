@@ -1,0 +1,2 @@
+Toggle zooming on a window
+Ctrl+Shift+# 
