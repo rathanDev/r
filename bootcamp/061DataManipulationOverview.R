@@ -17,7 +17,7 @@ library(nycflights13)
 # select()    (and  rename())
 # distint()
 # mutate()
-
+# summarise()
 
 
 
